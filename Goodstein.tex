@@ -33,7 +33,8 @@ TeX for this document is available at \url{https://github.com/zaprice}
 \newtheorem{conj}{Conjecture}
 
 \begin{abstract}
-Goodstein's theorem is an example of a natural independence phenomenon, a theorem which is "true" yet unprovable under a particular set of axioms, due to incompleteness.
+Goodstein's theorem is an example of a natural independence phenomenon, a theorem which is intuitively "true" yet unprovable under a particular set of axioms due to incompleteness.
+This theorem serves as an illustration of the limitations of the models we use to reason formally about mathematical objects.
 We will investigate the connection between G{\"o}del's incompleteness theorems and Goodstein's theorem by exploring a few areas of mathematics, including proof theory and ordinal numbers.
 This mathematical adventure is batteries-included (i.e. with proofs).
 \end{abstract}
@@ -55,6 +56,20 @@ We say $m\in\N$ is written in \emph{hereditary base-$n$} if $m$ is written as:
 $$m = \sum_{i=0}^{k} a_in^i = a_kn^k + a_{k-1}n^{k-1} + ... + a_1n + a_0$$
 where $n>1$ and $0\leq a_i < n$	for all $a_i$, with $a_k>0$.
 \end{define}
+
+\begin{define}
+We define $B[b]$, \emph{base change operator} in base $b$, as follows:
+\end{define}
+
+
+\begin{define}
+The \emph{Goodstein sequence with seed $m$}, $G(m)$, is defined recursively as follows:
+$G_1(m) = m$
+\end{define}
+
+% With a few examples, we will demonstrate the intuitive notion of why this theorem is true
+
+% Indeed, given enough time and a universe that allows, one could compute the length of any particular Goodstein sequence; this does not necessarily mean we can prove that they all terminate.
 
 \section{Ordinal Numbers}
 This section will contain an introduction to ordinal numbers and ordinal arithmetic; these techniques are necessary to prove Goodstein's theorem in ZFC.
