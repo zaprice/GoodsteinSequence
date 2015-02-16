@@ -9,19 +9,20 @@
 \usepackage{ccicons}
 
 \setlength{\parindent}{0in}
+\setlength{\parskip}{1em}
 
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\epz}{\varepsilon_0}
 
-\title{Goodstein's Theorem as a Natural Independence Phenomenon:\newline A Mathematical Adventure}
+\title{Goodstein's Theorem as a Natural Independence Phenomenon:\newline A Metamathematical Adventure}
 \author{Zachary Price\footnote { 
 \ccbysa \indent This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
 }}
 
 \begin{document}
 \maketitle
-%\thispagestyle{fancy}
 
 \newtheorem{define}{Definition}
 \newtheorem{thm}{Theorem}
@@ -37,6 +38,21 @@ This mathematical adventure is batteries-included (i.e. with proofs).
 \section{Introduction}
 This section will contain introductory information about our topics, including a description and statement of Goodstein's theorem.
 
+G{\"o}del's incompleteness theorems are a touchstone work of mathematical logic. Incompleteness has powerful effects across all of fundamental mathematics.
+We are very familiar with some of the big implications of incompleteness, like the independence of the continuum hypothesis from Zermelo-Fraenkel set theory.
+Such results are informally referred to as natural independence phenomena: examples where the unprovability of a statement arises, under certain axioms, as a result of incompleteness.
+In this paper, we will consider a theorem of Reuben Goodstein which is naturally independent from the axioms of Peano arithmetic.
+Goodstein's theorem is of particular interest as it is a very simple example of independence; the statement of the theorem involves only sequences of integers that terminate in finite time.
+Yet, the metamathematical results surrounding the theorem touch on very deep principles in mathematics.
+
+To state Goodstein's theorem, we will need the notion of hereditary base-$n$ notation.
+
+\begin{define}
+We say $m\in\N$ is written in \emph{hereditary base-$n$} if $m$ is written as:
+$$m = \sum_{i=0}^{k} a_in^i = a_kn^k + a_{k-1}n^{k-1} + ... + a_1n + a_0$$
+where $n>1$ and $0\leq a_i < n$	for all $a_i$, with $a_k>0$.
+\end{define}
+
 \section{Ordinal Numbers}
 This section will contain an introduction to ordinal numbers and ordinal arithmetic; these techniques are necessary to prove Goodstein's theorem in ZFC.
 
@@ -51,7 +67,7 @@ This section will contain an informal description of G{\"o}del's incompleteness 
 Then, we will follow with a likely-abridged, but mostly formal, retelling of G{\"o}del's proofs.
 
 \section{Gentzen's Consistency Proof}
-This section will contain Gerhard Gentzen's proof of the consistency of Peano arithmetic, using transfinite induction to $\varepsilon_0$.
+This section will contain Gerhard Gentzen's proof of the consistency of Peano arithmetic, using transfinite induction to $\epz$.
 We will be careful to note how this does not contradict G{\"o}del's work, and the further implications about the problem at hand.
 
 \section{Kirby and Paris}
